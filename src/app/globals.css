@@ -3,19 +3,55 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-background: #F5F5F5; /* Light grey background color */
+  --color-primary: #000000; /* Black for primary text */
+  --color-secondary: #555555; /* Medium grey for secondary text */
+  --color-accent: #FFD700; /* Gold/Yellow accent for highlights (e.g., badge) */
+  --color-border: #E0E0E0; /* Light grey for dividers or borders */
+  --color-button-bg: #000000; /* Black for button background */
+  --color-button-text: #FFFFFF; /* White for button text */
+  --color-hover-bg: #464646; /* Darker black for hover state */
+  --color-link: #000000; /* Black for links */
+  --color-link-hover: #222222; /* Slightly darker black for link hover */
+  --font-size-sm: 0.875rem; 
+  --font-size-base: 1rem; 
+  --font-size-lg: 1.125rem; 
+  --font-size-xl: 1.25rem; 
+  --font-size-2xl: 1.5rem; 
+  --font-size-3xl: 1.875rem; 
+  --font-size-4xl: 2.25rem; 
+  --font-size-5xl: 3rem;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-primary);
 }
+
+
+p {
+  color: var(--color-secondary);
+}
+
+button {
+  background-color: var(--color-button-bg);
+  color: var(--color-button-text);
+}
+
+button:hover {
+  background-color: var(--color-hover-bg);
+}
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+}
+
+.border {
+  border-color: var(--color-border);
+}
+
+
