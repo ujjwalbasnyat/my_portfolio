@@ -6,31 +6,35 @@
   --color-background: #F5F5F5; /* Light grey background color */
   --color-primary: #000000; /* Black for primary text */
   --color-secondary: #555555; /* Medium grey for secondary text */
-  --color-accent: #FFD700; /* Gold/Yellow accent for highlights (e.g., badge) */
+  --color-accent: #FFD700; /* Gold/Yellow accent for highlights */
   --color-border: #E0E0E0; /* Light grey for dividers or borders */
   --color-button-bg: #000000; /* Black for button background */
   --color-button-text: #FFFFFF; /* White for button text */
   --color-hover-bg: #464646; /* Darker black for hover state */
-  --color-link: #000000; /* Black for links */
-  --color-link-hover: #222222; /* Slightly darker black for link hover */
-  --font-size-sm: 0.875rem; 
-  --font-size-base: 1rem; 
-  --font-size-lg: 1.125rem; 
-  --font-size-xl: 1.25rem; 
-  --font-size-2xl: 1.5rem; 
-  --font-size-3xl: 1.875rem; 
-  --font-size-4xl: 2.25rem; 
+  --font-size-sm: 0.875rem;
+  --font-size-base: 1rem;
+  --font-size-lg: 1.125rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 1.875rem;
+  --font-size-4xl: 2.25rem;
   --font-size-5xl: 3rem;
+}
+
+[data-theme='dark'] {
+  --color-background: #121212; /* Dark grey/black background */
+  --color-primary: #FFFFFF; /* White for primary text */
+  --color-secondary: #B3B3B3; /* Light grey for secondary text */
+  --color-accent: #FFD700; /* Gold/Yellow accent for highlights */
+  --color-border: #2C2C2C; /* Dark grey for dividers or borders */
+  --color-button-bg: #1E1E1E; /* Darker grey for button background */
+  --color-button-text: #FFFFFF; /* White for button text */
+  --color-hover-bg: #333333; /* Slightly lighter grey for hover state */
 }
 
 body {
   background-color: var(--color-background);
   color: var(--color-primary);
-}
-
-
-p {
-  color: var(--color-secondary);
 }
 
 button {
@@ -43,15 +47,18 @@ button:hover {
 }
 
 a {
-  color: var(--color-link);
+  color: var(--color-primary);
 }
 
 a:hover {
-  color: var(--color-link-hover);
+  color: var(--color-accent);
 }
 
 .border {
   border-color: var(--color-border);
 }
 
-
+.dark-theme-wrapper[data-theme='dark'] {
+  background-color: var(--color-background); /* Dark theme background */
+  color: var(--color-primary); /* Dark theme text color */
+}

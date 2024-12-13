@@ -9,16 +9,16 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--color-background)",
-        primary: "var(--color-primary)",
-        secondary: "var(--color-secondary)",
-        accent: "var(--color-accent)",
-        border: "var(--color-border)",
-        "btn-bg": "var(--color-button-bg)",
-        "btn-text": "var(--color-button-text)",
-        "hover-bg": "var(--color-hover-bg)",
-        link: "var(--color-link)",
-        "link-hover": "var(--color-link-hover)",
+        background: 'var(--color-background)',
+        primary: 'var(--color-primary)',
+        secondary: 'var(--color-secondary)',
+        accent: 'var(--color-accent)',
+        border: 'var(--color-border)',
+        buttonBg: 'var(--color-button-bg)',
+        buttonText: 'var(--color-button-text)',
+        hoverBg: 'var(--color-hover-bg)',
+        link: 'var(--color-link)',
+        linkHover: 'var(--color-link-hover)',
       },
       fontSize: {
         sm: 'var(--font-size-sm)',
@@ -33,6 +33,7 @@ export default {
       padding: {
         btn: "12px 24px", // Button padding: top-bottom 12px, left-right 24px
       },
+      
     },
   },
   plugins: [],
