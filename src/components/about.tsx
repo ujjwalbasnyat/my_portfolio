@@ -1,5 +1,5 @@
+import { about } from '@/app/data'
 import Link from 'next/link'
-import { about } from '../data';
 
 const About = () => {
  
