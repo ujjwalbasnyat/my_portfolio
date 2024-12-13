@@ -1,5 +1,4 @@
 import { education } from '@/app/data'
-import React from 'react'
 
 const Education = () => {
   return (

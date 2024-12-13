@@ -1,7 +1,4 @@
 import { skills } from '@/app/data';
-import React from 'react'
-
-
 
 const ToolKit= () => {
     return (

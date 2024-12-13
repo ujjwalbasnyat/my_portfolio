@@ -1,5 +1,4 @@
 import { about } from '@/app/data'
-import React from 'react'
 
 const Aboutme = () => {
   return (

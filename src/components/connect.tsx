@@ -1,6 +1,5 @@
 'use client'
 import Link from 'next/link'
-import React from 'react'
 import { FaGithub, FaLinkedin, FaFacebook, FaInstagram, FaWhatsapp } from "react-icons/fa";
 
 const Connect = () => {
