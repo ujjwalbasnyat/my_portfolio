@@ -4,7 +4,7 @@ import Image from "next/image"
 
 const Work = () => {
   return (
-    <div className='py-10 px-20 grid grid-cols-1 gap-2'>
+    <div className='py-10 px-10 xl:px-20 grid grid-cols-1 justify-center items-center gap-2'>
       <div className='font-bold text-2xl'>{works.title}</div>
       <div className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
         {works.items.map((work, index)=>(
