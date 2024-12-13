@@ -1,6 +1,5 @@
 import React from 'react'
 import Image from 'next/image'
-import { Data } from '@/app/data'
 import { LiaExternalLinkAltSolid } from "react-icons/lia";
 import Link from 'next/link';
 
@@ -23,23 +22,22 @@ const Hero = () => {
         <div className='text-center font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl'>
           Web Developer
         </div>
-        {Data.map((person, index) => (
+        
           <h2
-            key={index}
+           
             className='text-center text-3xl sm:text-2xl md:text-3xl lg:text-4xl'
           >
-            Hi! I&apos;m {person.name}
+            Hi! I&apos;m Ujjwal Singh Basnet
           </h2>
-        ))}
+        
         <div className='text-center lg:w-[60%] w-full'>
         I&apos;m committed to creating user-centric websites. I leverage modern tools to build clean and efficient digital experiences. My goal is to combine functionality with aesthetics to deliver solutions that leave a lasting impression.
         </div>
       </div>
     </div>
-    <Link href="/projects">
+    <Link href="/projects/work">
     <button className='bg-btn-bg text-btn-text px-6 py-3 rounded-full flex items-center gap-3 hover:bg-btn-hover'>
       <div className='text-sm sm:text-base md:text-lg flex items-center gap-3'>View Work <LiaExternalLinkAltSolid size={24}/> </div>
-      
     </button></Link>
   </div>
 );

@@ -1,12 +1,11 @@
-import Navbar from '@/components/header'
 import React from 'react'
 
-const Projects = () => {
+const App = () => {
   return (
     <div>
-        <Navbar/>
+      this is working section
     </div>
   )
 }
 
-export default Projects
+export default App
