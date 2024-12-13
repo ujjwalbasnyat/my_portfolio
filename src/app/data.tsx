@@ -2,6 +2,7 @@ import { RiGraduationCapFill, RiNextjsLine, RiTailwindCssFill, RiReactjsLine } f
 import { FaFigma, FaPython, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
 import { SiNumpy, SiPandas, SiTableau } from "react-icons/si";
+import React from "react";
 
 type InfoField = {
     fieldName: string;
@@ -16,7 +17,7 @@ type EducationItem = {
 };
 
 type SkillItem = {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     name: string;
 };
 
@@ -32,7 +33,7 @@ type WorkItem = {
 };
 
 type ContactInfo = {
-    icon: JSX.Element;
+    icon: React.ReactNode;
     fieldName: string;
     fieldValue: string;
 };
