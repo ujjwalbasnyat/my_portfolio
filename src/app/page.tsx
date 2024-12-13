@@ -2,20 +2,18 @@
 import Hero from "@/components/hero";
 import ToolKit from "@/components/toolkit";
 import About from "./about/page";
-import Connect from "@/components/connect";
 import SubNav from "@/components/subnav";
 
 const Home = () => {
 
   return (
-    <div>
+    <div className="">
       <SubNav />
-      <div className="px-10 flex flex-col gap-20">
+      <div className="flex flex-col gap-20">
         <Hero />
+        <ToolKit />
         <About />
-          <ToolKit />
-        <Connect />
-        <div></div>
+          
       </div>
     </div>
   );

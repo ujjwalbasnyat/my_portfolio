@@ -26,7 +26,7 @@ const Header = () => {
 
   return (
     <nav className=" py-5 px-10 bg-background bg-opacity-50  backdrop-blur-lg flex justify-between items-center">
-      <Link href="/" className="font-bold text-white text-2xl">Ujjwal <span>.</span></Link>
+      <Link href="/" className="font-bold text-accent text-2xl">Ujjwal S. Basnet </Link>
       <div className="hidden xl:flex items-center gap-8 ">
       <Nav links={links}/>
       <Link href="/projects/contact"><button className="px-4 py-3 bg-accent rounded-md text-background">Hire me</button></Link>

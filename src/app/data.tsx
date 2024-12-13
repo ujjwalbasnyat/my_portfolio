@@ -1,8 +1,10 @@
 import { RiGraduationCapFill, RiNextjsLine, RiTailwindCssFill, RiReactjsLine } from "react-icons/ri";
-import { FaFigma, FaPython, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
+import { FaFigma,FaGitAlt,FaFacebook , FaInstagram,FaLinkedin, FaGithub, FaPython,FaNodeJs, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 import { IoIosMail } from "react-icons/io";
-import { SiNumpy, SiPandas, SiTableau } from "react-icons/si";
+import { SiNumpy, SiPandas,SiPostgresql,SiJavascript,SiTypescript,SiGraphql, SiTableau } from "react-icons/si";
 import React from "react";
+
+
 
 type InfoField = {
     fieldName: string;
@@ -38,9 +40,13 @@ type ContactInfo = {
     fieldValue: string;
 };
 
+
+export const intro = {
+    title: "Hi, I am Ujjwal Singh Basnet, Web Developer & Data Science Enthusiast"
+}
 export const about = {
     title: 'About me',
-    description: "I'm a Web Developer and Aspiring Data Scientist, focusing on frontend development and data-driven solutions. Currently studying Mathematics, I'm building skills in web technologies and data analysis. Outside of work, I enjoy exploring nature trails and learning new things.",
+    description: "I am currently pursuing a Bachelor's degree in Science at ASCOL, with a strong passion for both data science and web development. Alongside my degree, I have gained hands-on experience in programming languages and data-driven technologies. I am committed to developing innovative solutions and continuously enhancing my skills in software engineering and data analysis.",
     info: [
         { fieldName: "Name", fieldValue: "Ujjwal Singh Basnet" },
         { fieldName: "Phone", fieldValue: "(+977) 9840267935" },
@@ -75,7 +81,7 @@ export const education = {
         },
         {
             institution: "Community Collage",
-            degree: "Associate Degree in Math",
+            degree: "Associate Degree in Mathematics",
             tools: "Mathematics, Statistics",
             duration: "2024-present",
         },
@@ -83,7 +89,7 @@ export const education = {
 };
 
 export const skills = {
-    title: "My skills",
+    title: "Tech Stack",
     description: "I specialize in frontend development using Next.js, React.js, Tailwind CSS, and Figma to design and build responsive, user-friendly interfaces. In data science, I leverage Python, NumPy, Pandas, and Tableau to analyze data and create impactful visualizations.",
     skilllist: [
         { icon: <RiNextjsLine />, name: 'Nextjs' },
@@ -94,6 +100,12 @@ export const skills = {
         { icon: <SiPandas />, name: 'Pandas' },
         { icon: <SiTableau />, name: 'Tableau' },
         { icon: <FaFigma />, name: 'Figma' },
+        { icon: <FaGitAlt />, name: 'Git' },
+        { icon: <SiPostgresql />, name: 'PostgreSQL' },
+        { icon: <SiGraphql />, name: 'GraphQL' },
+        { icon: <SiTypescript />, name: 'TypeScript' },
+        { icon: <FaNodeJs />, name: 'NodeJs' },
+        { icon: <SiJavascript />, name: 'JavaScript' },
     ] as SkillItem[],
 };
 
@@ -152,3 +164,57 @@ export const contact = {
         { icon: <FaMapMarkerAlt />, fieldName: "Address", fieldValue: "Kathmandu, Nepal" },
     ] as ContactInfo[],
 };
+
+
+export const blogs =  {
+    heading:"Blogs",
+    contents :[
+        {
+            title:"Advanced Data Cleaning Techniques with Pandas",
+            description:"Dive into advanced data cleaning methods using Pandas. Learn how to handle missing values, remove duplicates, and apply complex transformations to clean and prepare data for analysis.",
+        },
+        {
+            title:"Building Dynamic Web Pages with JavaScript and React",
+            description:"This blog covers how to build dynamic, user-interactive web pages with React.js, focusing on state management, React hooks, and integrating external data sources through APIs for real-time updates."
+        },
+        {
+            title:"Optimizing SQL Queries for Large Datasets in PostgreSQL",
+            description:"Learn how to efficiently manage large datasets in PostgreSQL by optimizing your SQL queries. The blog will cover indexing strategies, query execution plans, and best practices to improve performance."
+        },
+        {
+            title:"Mastering Prototyping and Design Systems in Figma",
+            description:"Learn how to create professional-grade prototypes and design systems in Figma. This blog will guide you through interactive design elements, collaboration features, and the creation of reusable components for consistent UI/UX design."
+        },
+        {
+            title:"Performing Matrix Operations and Linear Algebra with Numpy",
+            description:"Delve into matrix operations and linear algebra with Numpy. This blog will explain how to efficiently manipulate multi-dimensional arrays and perform advanced calculations for data analysis and scientific computing."
+        },
+        {
+            title:"Introduction to Data Visualization with Matplotlib",
+            description:"Learn how to create compelling visualizations using Matplotlib and Seaborn. This blog will cover the basics of plotting charts, customizing graphs, and interpreting data insights through visual representation."
+        },
+    ]
+}
+
+export const socials = [
+    {
+        media: "Facebook",
+        icon: <FaFacebook/>,
+        link:"https://www.facebook.com/uzal.basnet.969",
+    },
+    {
+        media: "Instagram",
+        icon: <FaInstagram/>,
+        link:"https://www.instagram.com/uzolify.io/",
+    },
+    {
+        media: "LinkedIn",
+        icon: <FaLinkedin/>,
+        link:"https://www.linkedin.com/in/ujjwal-basnet-50b024330/",
+    },
+    {
+        media: "Github",
+        icon: <FaGithub/>,
+        link:"https://github.com/ujjwalbasnyat",
+    },
+]
