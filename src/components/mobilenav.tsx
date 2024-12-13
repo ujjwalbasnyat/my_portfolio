@@ -3,7 +3,17 @@ import Link from "next/link";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai"; // Icons for toggle
 import { usePathname } from "next/navigation"; // Import usePathname
 
-export default function MobileNav({ links }) {
+// Define the type for the links prop
+type LinkItem = {
+    path: string;
+    name: string;
+};
+
+type MobileNavProps = {
+    links: LinkItem[];
+};
+
+export default function MobileNav({ links }: MobileNavProps) {
     const [isOpen, setIsOpen] = useState(false);
     const pathname = usePathname(); // Get the current path
 
@@ -25,7 +35,10 @@ export default function MobileNav({ links }) {
                             <div key={link.path}>
                                 <Link
                                     href={link.path}
-                                    className={`${link.path === pathname && "text-accent border-b-2 border-accent"} capitalize transition-all`}
+                                    className={`${
+                                        link.path === pathname &&
+                                        "text-accent border-b-2 border-accent"
+                                    } capitalize transition-all`}
                                     onClick={() => setIsOpen(false)} // Close menu on click
                                 >
                                     {link.name}

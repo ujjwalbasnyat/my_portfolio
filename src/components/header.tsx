@@ -1,5 +1,4 @@
 'use client'
-import React, { useState } from "react";
 import Link from "next/link";
 import Nav from "./nav";
 import MobileNav from "./mobilenav";

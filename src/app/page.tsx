@@ -1,5 +1,4 @@
 'use client'
-// import EducationExperience from "@/components/edu";
 import Hero from "@/components/hero";
 import ToolKit from "@/components/toolkit";
 import About from "./about/page";
